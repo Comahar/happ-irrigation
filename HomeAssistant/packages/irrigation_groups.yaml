@@ -1,0 +1,154 @@
+group:
+
+  irrigation_information_history:
+    name: 'Irrigation Information'
+    entities:
+      - sensor.last_irrigated_time
+      - sensor.zone1_time_today
+      - sensor.zone2_time_today
+      - sensor.zone3_time_today
+      - sensor.zone4_time_today
+      - sensor.zone5_time_today
+      - sensor.zone6_time_today
+      - sensor.zone7_time_today
+      - sensor.zone8_time_today
+
+
+  #CYCLE 1
+
+  irrigation_cycle1_status:
+    name: 'Cycle 1 Status'
+    entities:
+      - input_boolean.cycle1_enable
+      - sensor.cycle1_status
+      - input_boolean.cycle1_running
+      - input_datetime.cycle1_schedule_time
+      - group.irrigation_cycle1_days
+      - group.irrigation_cycle1_zone_durations
+      - input_number.cycle1_multiplier
+
+  irrigation_cycle1_days:
+    name: 'Cycle 1 Days'
+    icon: mdi:calendar-range
+    all: true
+    entities:
+      - input_boolean.cycle1_mon
+      - input_boolean.cycle1_tue
+      - input_boolean.cycle1_wed
+      - input_boolean.cycle1_thu
+      - input_boolean.cycle1_fri
+      - input_boolean.cycle1_sat
+      - input_boolean.cycle1_sun
+
+  irrigation_cycle1_zone_durations:
+    name: 'Cycle 1 Zone Durations'
+    icon: mdi:timer-sand
+    entities:
+      - input_number.cycle1_zone1_duration
+      - input_number.cycle1_zone2_duration
+      - input_number.cycle1_zone3_duration
+      - input_number.cycle1_zone4_duration
+      - input_number.cycle1_zone5_duration
+      - input_number.cycle1_zone6_duration
+      - input_number.cycle1_zone7_duration
+      - input_number.cycle1_zone8_duration
+      
+
+  #CYCLE 2
+
+  irrigation_cycle2_status:
+    name: 'Cycle 2 Status'
+    entities:
+      - input_boolean.cycle2_enable
+      - sensor.cycle2_status
+      - input_boolean.cycle2_running
+      - input_datetime.cycle2_schedule_time
+      - group.irrigation_cycle2_days
+      - group.irrigation_cycle2_zone_durations
+      - input_number.cycle2_multiplier
+
+  irrigation_cycle2_days:
+    name: 'Cycle 2 Days'
+    all: true
+    icon: mdi:calendar-range
+    entities:
+      - input_boolean.cycle2_mon
+      - input_boolean.cycle2_tue
+      - input_boolean.cycle2_wed
+      - input_boolean.cycle2_thu
+      - input_boolean.cycle2_fri
+      - input_boolean.cycle2_sat
+      - input_boolean.cycle2_sun
+
+  irrigation_cycle2_zone_durations:
+    name: 'Cycle 2 Zone Durations'
+    icon: mdi:timer-sand
+    entities:
+      - input_number.cycle2_zone1_duration
+      - input_number.cycle2_zone2_duration
+      - input_number.cycle2_zone3_duration
+      - input_number.cycle2_zone4_duration
+      - input_number.cycle2_zone5_duration
+      - input_number.cycle2_zone6_duration
+      - input_number.cycle2_zone7_duration
+      - input_number.cycle2_zone8_duration
+
+  #MANUAL CYCLE
+  irrigation_cyclemanual_status:
+    name: 'Cycle Manual Status'
+    entities:
+      - input_boolean.cyclemanual_running
+      - group.irrigation_cyclemanual_zone_durations
+      - group.irrigation_valves
+
+  irrigation_cyclemanual_days:
+    name: 'Cycle Manual Days'
+    icon: mdi:calendar-range
+    all: true
+    entities:
+      - input_boolean.cyclemanual_mon
+      - input_boolean.cyclemanual_tue
+      - input_boolean.cyclemanual_wed
+      - input_boolean.cyclemanual_thu
+      - input_boolean.cyclemanual_fri
+      - input_boolean.cyclemanual_sat
+      - input_boolean.cyclemanual_sun
+
+  irrigation_cyclemanual_zone_durations:
+    name: 'Cycle Manual Zone Durations'
+    icon: mdi:timer-sand
+    entities:
+      - input_number.cyclemanual_zone1_duration
+      - input_number.cyclemanual_zone2_duration
+      - input_number.cyclemanual_zone3_duration
+      - input_number.cyclemanual_zone4_duration
+      - input_number.cyclemanual_zone5_duration
+      - input_number.cyclemanual_zone6_duration
+      - input_number.cyclemanual_zone7_duration
+      - input_number.cyclemanual_zone8_duration
+
+  irrigation_valves_status:
+    name: 'Valves Status'
+    icon: mdi:layers
+    entities:
+      - sensor.zone1_status
+      - sensor.zone2_status
+      - sensor.zone3_status
+      - sensor.zone4_status
+      - sensor.zone5_status
+      - sensor.zone6_status
+      - sensor.zone7_status
+      - sensor.zone8_status
+
+  irrigation_valves:
+    name: 'Manual Valve Control'
+    icon: mdi:layers
+    entities:
+      - switch.zone_1
+      - switch.zone_2
+      - switch.zone_3
+      - switch.zone_4
+      - switch.zone_5
+      - switch.zone_6
+      - switch.zone_7
+      - switch.zone_8

@@ -1,0 +1,12 @@
+input_text:
+  cycle1_current_status:
+    name: Current Status
+    icon: mdi:pipe
+
+  cycle2_current_status:
+    name: Current Status
+    icon: mdi:pipe
+
+  cyclemanual_current_status:
+    name: Current Status
+    icon: mdi:pipe

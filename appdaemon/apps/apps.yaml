@@ -1,0 +1,18 @@
+garden_irrigation_cycle1:
+    module: irrigation
+    class: gardenIrrigation
+    pin_app: true
+    cycle_id: 1
+    zone_count: 8
+garden_irrigation_cycle2:
+    module: irrigation
+    class: gardenIrrigation
+    pin_app: true
+    cycle_id: 2
+    zone_count: 8
+garden_irrigation_cyclemanual:
+    module: irrigation
+    class: gardenIrrigation
+    pin_app: true
+    cycle_id: manual
+    zone_count: 8

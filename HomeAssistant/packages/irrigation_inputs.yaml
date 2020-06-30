@@ -1,0 +1,348 @@
+
+#==================
+#=== Input_Numbers
+#==================
+input_number:
+
+  # CYCLE 1
+  cycle1_multiplier:
+    name: Irrigation Multiplier
+    min: 0
+    max: 200
+    step: 10
+    icon: mdi:water-percent
+
+  cycle1_zone1_duration:
+    name: Zone 1 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+
+  cycle1_zone2_duration:
+    name: Zone 2 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cycle1_zone3_duration:
+    name: Zone 3 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cycle1_zone4_duration:
+    name: Zone 4 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cycle1_zone5_duration:
+    name: Zone 5 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cycle1_zone6_duration:
+    name: Zone 6 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cycle1_zone7_duration:
+    name: Zone 7 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+    
+  cycle1_zone8_duration:
+    name: Zone 8 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+    
+  # CYCLE 2
+  cycle2_multiplier:
+    name: Irrigation Multiplier
+    min: 0
+    max: 200
+    step: 10
+    icon: mdi:water-percent
+
+  cycle2_zone1_duration:
+    name: Zone 1 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+    
+  cycle2_zone2_duration:
+    name: Zone 2 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+    
+  cycle2_zone3_duration:
+    name: Zone 3 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cycle2_zone4_duration:
+    name: Zone 4 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cycle2_zone5_duration:
+    name: Zone 5 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+    
+  cycle2_zone6_duration:
+    name: Zone 6 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cycle2_zone7_duration:
+    name: Zone 7 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+
+  cycle2_zone8_duration:
+    name: Zone 8 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+
+#CYCLE MANUAL
+  cyclemanual_multiplier:
+    name: Irrigation Multiplier
+    min: 0
+    max: 200
+    step: 10
+    icon: mdi:water-percent
+
+  cyclemanual_zone1_duration:
+    name: Zone 1 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+
+  cyclemanual_zone2_duration:
+    name: Zone 2 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+    
+  cyclemanual_zone3_duration:
+    name: Zone 3 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cyclemanual_zone4_duration:
+    name: Zone 4 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cyclemanual_zone5_duration:
+    name: Zone 5 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+    
+  cyclemanual_zone6_duration:
+    name: Zone 6 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+      
+  cyclemanual_zone7_duration:
+    name: Zone 7 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+
+  cyclemanual_zone8_duration:
+    name: Zone 8 Duration
+    min: 0
+    max: 20
+    step: 1
+    icon: mdi:camera-timer
+#====================
+#=== Input_Datetimes
+#====================
+input_datetime:
+  cycle1_schedule_time:
+    name: Run time
+    has_date: false
+    has_time: true
+
+  cycle2_schedule_time:
+    name: Run time
+    has_date: false
+    has_time: true
+
+  cyclemanual_schedule_time:
+    name: Run time
+    has_date: false
+    has_time: true
+
+
+#===================
+#=== Input_Booleans
+#===================
+input_boolean:
+  #CYCLE 1
+  cycle1_enable:
+    name: Enable cycle
+    icon: mdi:av-timer
+
+  cycle1_running:
+    name: Runnig
+    icon: mdi:play-pause
+
+  cycle1_manual_run_delayed:
+    name: Run cycle now delayed
+    icon: mdi:arrow-right-drop-circle
+
+  #CYCLE 2
+  cycle2_enable:
+    name: Enable cycle
+    icon: mdi:av-timer
+
+  cycle2_running:
+    name: Runnig
+    icon: mdi:play-pause
+
+  cycle2_manual_run_delayed:
+    name: Run cycle now delayed
+    icon: mdi:arrow-right-drop-circle
+
+  cyclemanual_enable:
+    name: Enable cycle
+    icon: mdi:av-timer
+
+  #MANUAL CYCLE
+
+  cyclemanual_running:
+    name: Manual runnig
+    icon: mdi:play-pause
+
+  cyclemanual_manual_run_delayed:
+    name: Run cycle now delayed
+    icon: mdi:arrow-right-drop-circle
+
+
+  #CYCLE 1
+  cycle1_mon:
+    name: Monday
+    icon: mdi:calendar
+
+  cycle1_tue:
+    name: Tuesday
+    icon: mdi:calendar
+
+  cycle1_wed:
+    name: Wednesday
+    icon: mdi:calendar
+
+  cycle1_thu:
+    name: Thursday
+    icon: mdi:calendar
+
+  cycle1_fri:
+    name: Friday
+    icon: mdi:calendar
+
+  cycle1_sat:
+    name: Saturday
+    icon: mdi:calendar
+
+  cycle1_sun:
+    name: Sunday
+    icon: mdi:calendar
+
+  #CYCLE 2
+  cycle2_mon:
+    name: Monday
+    icon: mdi:calendar
+
+  cycle2_tue:
+    name: Tuesday
+    icon: mdi:calendar
+
+  cycle2_wed:
+    name: Wednesday
+    icon: mdi:calendar
+
+  cycle2_thu:
+    name: Thursday
+    icon: mdi:calendar
+
+  cycle2_fri:
+    name: Friday
+    icon: mdi:calendar
+
+  cycle2_sat:
+    name: Saturday
+    icon: mdi:calendar
+
+  cycle2_sun:
+    name: Sunday
+    icon: mdi:calendar
+
+  #MANUAL CYCLE
+  cyclemanual_mon:
+    name: Monday
+    icon: mdi:calendar
+
+  cyclemanual_tue:
+    name: Tuesday
+    icon: mdi:calendar
+
+  cyclemanual_wed:
+    name: Wednesday
+    icon: mdi:calendar
+
+  cyclemanual_thu:
+    name: Thursday
+    icon: mdi:calendar
+
+  cyclemanual_fri:
+    name: Friday
+    icon: mdi:calendar
+
+  cyclemanual_sat:
+    name: Saturday
+    icon: mdi:calendar
+
+  cyclemanual_sun:
+    name: Sunday
+    icon: mdi:calendar

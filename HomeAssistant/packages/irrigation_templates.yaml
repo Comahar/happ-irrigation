@@ -1,0 +1,134 @@
+sensor:
+  - platform: template
+    sensors:
+      cycle1_status:
+        friendly_name: "Cyce Status"
+        value_template: "{{ states('input_text.cycle1_current_status') }}"
+        icon_template: mdi:dots-horizontal
+
+      cycle2_status:
+        friendly_name: "Cyce Status"
+        value_template: "{{ states('input_text.cycle2_current_status') }}"
+        icon_template: mdi:dots-horizontal
+
+      cyclemanual_status:
+        friendly_name: "Cyce Status"
+        value_template: "{{ states('input_text.cycle2_current_status') }}"
+        icon_template: mdi:dots-horizontal
+
+      #ZONE STATUS
+      zone1_status:
+        friendly_name: "Zone 1 Valve"
+        value_template: >
+          {% if is_state('switch.zone_1', 'on') %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}     
+        icon_template: >
+          {% if is_state('switch.zone_1', 'on') %}
+            mdi:pipe
+          {% else %}
+            mdi:pipe-disconnected
+          {% endif %}     
+      zone2_status:
+        friendly_name: "Zone 2 Valve"
+        value_template: >
+          {% if is_state('switch.zone_2', 'on') %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}     
+        icon_template: >
+          {% if is_state('switch.zone_2', 'on') %}
+            mdi:pipe
+          {% else %}
+            mdi:pipe-disconnected
+          {% endif %}     
+      zone3_status:
+        friendly_name: "Zone 3 Valve"
+        value_template: >
+          {% if is_state('switch.zone_3', 'on') %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}     
+        icon_template: >
+          {% if is_state('switch.zone_3', 'on') %}
+            mdi:pipe
+          {% else %}
+            mdi:pipe-disconnected
+          {% endif %}     
+      zone4_status:
+        friendly_name: "Zone 4 Valve"
+        value_template: >
+          {% if is_state('switch.zone_4', 'on') %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}     
+        icon_template: >
+          {% if is_state('switch.zone_4', 'on') %}
+            mdi:pipe
+          {% else %}
+            mdi:pipe-disconnected
+          {% endif %}     
+      zone5_status:
+        friendly_name: "Zone 5 Valve"
+        value_template: >
+          {% if is_state('switch.zone_5', 'on') %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}     
+        icon_template: >
+          {% if is_state('switch.zone_5', 'on') %}
+            mdi:pipe
+          {% else %}
+            mdi:pipe-disconnected
+          {% endif %}     
+      zone6_status:
+        friendly_name: "Zone 6 Valve"
+        value_template: >
+          {% if is_state('switch.zone_6', 'on') %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}     
+        icon_template: >
+          {% if is_state('switch.zone_6', 'on') %}
+            mdi:pipe
+          {% else %}
+            mdi:pipe-disconnected
+          {% endif %}     
+      zone7_status:
+        friendly_name: "Zone 7 Valve"
+        value_template: >
+          {% if is_state('switch.zone_7', 'on') %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}     
+        icon_template: >
+          {% if is_state('switch.zone_7', 'on') %}
+            mdi:pipe
+          {% else %}
+            mdi:pipe-disconnected
+          {% endif %}     
+      zone8_status:
+        friendly_name: "Zone 8 Valve"
+        value_template: >
+          {% if is_state('switch.zone_8', 'on') %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}     
+        icon_template: >
+          {% if is_state('switch.zone_8', 'on') %}
+            mdi:pipe
+          {% else %}
+            mdi:pipe-disconnected
+          {% endif %}
+
+
+
